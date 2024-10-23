@@ -21,13 +21,13 @@
 %
 \thispagestyle{empty}
 
-\noindent Please note: Abbreviations should be introduced at the first mention in the main text – no abbreviations lists. Suggested structure of main text (not enforced) is provided below.
+\noindent 
 
 \section*{Introduction}
 \input{introduction.tex}
 
 \section*{Results}
-%\input{results.tex}
+%\input{results.tex
 
 \section*{Discussion}
 %\input{disscussion.tex}
@@ -37,20 +37,33 @@
 
 \bibliography{sample}
 
-\noindent LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Hao:gidmaps:2014}.
+\noindent 
+LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Hao:gidmaps:2014}.
 
 For data citations of datasets uploaded to e.g. \emph{figshare}, please use the \verb|howpublished| option in the bib entry to specify the platform and the link, as in the \verb|Hao:gidmaps:2014| example in the sample bibliography file.
 
-\section*{Acknowledgements (not compulsory)}
+\section*{Acknowledgements}
 
-Acknowledgements should be brief, and should not include thanks to anonymous referees and editors, or effusive comments. Grant or contribution numbers may be acknowledged.
+We would like to acknowledge former members of Institute of Experimental Medicine of the Czech Academy of Sciences, Department of Molecular Genetics, Prague, 142 20, Czech Republic: Dr. Pavel Vodička and Dr. Jana Slyšková for providing EDTA samples for confirmatory testing. Experiments and descriptions of these samples were previously published in Slyšková et al., 2015.
+% Doplnit referenci k článku a svolení k pokusům
+This work was supported by EU grant FP7-HEALTH-2007-B-222916: SPIDIA (Standardisation and improvement of generic pre-analytical tools and procedures for in vitro diagnostics) and by the Grant Agency of the Charles University, Prague, Czech Republic (PRIMUS/20/MED/008). 
 
 \section*{Author contributions statement}
 
-Must include all authors, identified by initials, for example:
-A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript. 
+All authors participated in the design of the work, interpretation of data, and revision of the manuscript. R.W., M.K., U.O.: collection of samples, isolation of RNA, and quality control of samples. R.S., J.B., D.S., M.K.: design and validation of primers. H.Z., E.R.: precision experiments using designed primers. V.K.: acquisition of qPCR data, analysis, interpretation of data, and drafting of the manuscript. L.Z.: acquisition of qPCR data. P.V., S.P., C.M.C., V.N.: statistical analysis.
 
 \section*{Additional information}
+
+S1. Information on primers.
+S2. EDTA: collected samples and their characteristics.
+S3. EDTA: prevalidation data.
+S4. EDTA: validation data.
+S5. EDTA: data for confirmatory experiment.
+S6. EDTA: plots and statistics from prevalidation and validation results.
+S7. PAXgene: collected samples and their characteristics.
+S8. PAXgene: prevalidation data.
+S9. PAXgene: validation data.
+S10. PAXgene: plots and statistics from prevalidation and validation results.
 
 To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing interests} (mandatory statement). 
 
@@ -58,24 +71,60 @@ The corresponding author is responsible for submitting a \href{http://www.nature
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\linewidth]{stream}
-\caption{Legend (350 words max). Example legend text.}
-\label{fig:stream}
+\includegraphics[width=\linewidth]{figure1}
+\caption{Study design.}
+\label{fig:figure1}
 \end{figure}
+% Figure1 ještě prověřit, jestli tam bude vše a ještě předělat. Sjednotit popisky na x ose
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|l|l|}
-\hline
-Condition & n & p \\
-\hline
-A & 5 & 0.1 \\
-\hline
-B & 10 & 0.01 \\
-\hline
-\end{tabular}
-\caption{\label{tab:example}Legend (350 words max). Example legend text.}
-\end{table}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figure2}
+    \caption{EDTA candidate markers' gene expression measured over time. A) Upregulation markers, B) Downregulation markers.}
+    \label{fig:figure2}
+    \end{figure}
+% Figure2 Vymyslet, jak to udělat s tou tmavou čárou v pravém obrázku a sjednotit čísla na y osách, aby to byla procenta. Sjednotit popisky na x ose.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figure3}
+    \caption{RNA integrity number (RIN) measured while blood was incubated in EDTA tubes at RT (N = 7).}
+    \label{fig:figure3}
+    \end{figure}
+% Figure3 Zkusit to dát od 1 do 10 a zmenšit jako ostatní obrázky s RIN. Sjednotit popisky na x ose.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figure4}
+    \caption{SCI.}
+    \label{fig:figure4}
+    \end{figure}
+% Figure4  Tady asi celkově předělat graf a barvy. Sjednotit popisky na x ose.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figure5}
+    \caption{3D PCA. Red dots represent control samples at 24 hours, black dots represent control samples at 6 hours, and green dots represent control samples at 0 hours. Gray dots are tested samples. Data are autoscaled.}
+    \label{fig:figure5}
+    \end{figure}
+% Figure5 Možná udělat bílé pozdadí a popsat, co jsou ty čáry mezi dots.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figure6}
+    \caption{Normalized PAXgene candidate markers for degradation of gene expression measured over time. A) Degradation at RT. B) Degradation at 30°C.}
+    \label{fig:figure6}
+    \end{figure}
+% Figure6 Sjednotit popisky na x ose, je jinde napsáno v popiskách normalizováno? Sjednotit to, aby na obou y osách bylo ty ty samé čísla.    
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{fig7}
+    \caption{RNA Integrity Number (RIN) measured in whole blood samples (N = 7) incubated in PAXgene RNA tubes at room temperature (RT) and at 30°C.}
+    \label{fig:figure7}
+    \end{figure}
+% Figure7 V pravém obrázku je dole PAX30, sjednotit obě osy v obou obrázcích, neopakovat vysvětlení zkratky v popisku.
 
 Figures and tables can be referenced in LaTeX using the ref command, e.g. Figure \ref{fig:stream} and Table \ref{tab:example}.
 
